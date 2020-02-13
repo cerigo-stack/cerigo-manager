@@ -5,5 +5,5 @@ wget https://www.torproject.org/dist/torbrowser/9.0.4/tor-browser-linux64-9.0.4_
 tar xf 1.tar.xz
 mkdir ../$name
 cp -r tor-browser_en-US/* ../$name/
-sudo ln -s ../$name/start-tor-browser.desktop /usr/bin/$name
+sudo ln -s $1/$name/start-tor-browser.desktop /usr/bin/$name
 
