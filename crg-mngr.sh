@@ -20,7 +20,7 @@ if [ "$1" == "setup" ]; then
 	cp $0 $crg_install_dir/$0
 	whereiam=$(pwd)
 	cd $crg_install_dir
-	sudo ln -s $crg_install_dir/$0 /usr/bin/crg-mngra 
+	sudo ln -s $crg_install_dir/$0 /usr/bin/crg-mngr 
 	wget $version_url -O $crg_sync_dir/version
 	rm $whereiam/$0
 	echo "Directories created"
