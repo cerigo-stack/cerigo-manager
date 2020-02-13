@@ -15,14 +15,14 @@ fi
 ####### arguments #######
 					##setup##
 if [ "$1" == "setup" ]; then
-	rm -rf $crg_install_dir
 	mkdir $crg_install_dir
 	mkdir $crg_sync_dir
 	cp $0 $crg_install_dir/$0
-	rm $0
+	whereiam=$(pwd)
 	cd $crg_install_dir
-	sudo ln -s $crg_install_dir/$0 /usr/bin/crg-mngr 
+	sudo ln -s $crg_install_dir/$0 /usr/bin/crg-mngra 
 	wget $version_url -O $crg_sync_dir/version
+	rm $whereiam/$0
 	echo "Directories created"
 	echo "Installation completed, you can now run the Cerigo Manager with the crg-mngr command"
 					##sync##
