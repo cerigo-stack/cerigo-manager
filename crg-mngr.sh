@@ -21,7 +21,7 @@ if [ "$1" == "setup" ]; then
 	cp $0 $crg_install_dir/$0
 	rm $0
 	cd $crg_install_dir
-	sudo ln -s $crg_install_dir/$0 /usr/bin/mananikola 
+	sudo ln -s $crg_install_dir/$0 /usr/bin/crg-mngr 
 	wget $version_url -O $crg_sync_dir/version
 	echo "Directories created"
 	echo "Installation completed, you can now run the Cerigo Manager with the crg-mngr command"
